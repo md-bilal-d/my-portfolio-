@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Bilal D portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" style="color: white;">MB</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-translate="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-translate="nav-about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a></li>
+
+                <li><a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-text="Mohammed Bilal D">
+                        <span class="gradient-text">Mohammed Bilal D</span>
+                    </h1>
+                    <p class="hero-subtitle">B.E. Student & Aspiring Software Engineer</p>
+                    <p class="hero-description">Visvesvaraya Technological University</p>
+                    <p class="hero-description">I build efficient backend systems and love solving complex problems.</p>
+                    <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohammed-bilal-d/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/md-bilal-d" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="mailto:mohammedbilald95@gmail.com" aria-label="Gmail" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/bilalx.exe/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-photo-section">
+                <div class="profile-photo-container">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="hero-profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hero-image-placeholder" style="display: none;">
+                        <i class="fas fa-user-circle"></i>
+                        <p class="placeholder-text">Add your photo to<br>images/profile.jpg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I am an engineering student pursuing Computer Science at Ghousia College of Engineering, Ramanagara. My passion lies in technology, particularly in networking, programming languages like Java, Node.js, C, JavaScript, SQL, HTML, CSS, and PHP.</p>
+                    <p>I'm proficient with frameworks like CodeIgniter and am actively seeking opportunities to apply my skills in real-world projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-translate="section-skills">Skills & Expertise</h2>
+            
+            <!-- My Tech Stack -->
+            <div class="tech-stack-section" data-aos="fade-up">
+                <h3 class="tech-category-title">Languages</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-item" title="Java">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-item" title="JavaScript">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item" title="SQL">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-item" title="C">
+                        <i class="fas fa-code"></i>
+                        <span>C</span>
+                    </div>
+                    <div class="tech-item" title="HTML5">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-item" title="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-stack-section" data-aos="fade-up">
+                <h3 class="tech-category-title">Backend</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-item" title="Node.js">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item" title="PHP">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="tech-item" title="Express.js">
+                        <i class="fab fa-node"></i>
+                        <span>Express.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="tech-stack-section" data-aos="fade-up">
+                <h3 class="tech-category-title">Tools & Platforms</h3>
+                <div class="tech-icons-grid">
+                    <div class="tech-item" title="Git">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item" title="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-item" title="Netlify">
+                        <i class="fas fa-cloud"></i>
+                        <span>Netlify</span>
+                    </div>
+                    <div class="tech-item" title="Render">
+                        <i class="fas fa-server"></i>
+                        <span>Render</span>
+                    </div>
+                    <div class="tech-item" title="Vercel">
+                        <i class="fas fa-bolt"></i>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="tech-item" title="Cursor">
+                        <i class="fas fa-mouse-pointer"></i>
+                        <span>Cursor</span>
+                    </div>
+                    <div class="tech-item" title="Qoder">
+                        <i class="fas fa-terminal"></i>
+                        <span>Qoder</span>
+                    </div>
+                    <div class="tech-item" title="Trae">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Trae</span>
+                    </div>
+                    <div class="tech-item" title="Warp">
+                        <i class="fas fa-terminal"></i>
+                        <span>Warp</span>
+                    </div>
+                    <div class="tech-item" title="Windsurf">
+                        <i class="fas fa-wind"></i>
+                        <span>Windsurf</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            
+
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up">
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern online shopping experience with seamless checkout</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-small">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ui" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-info">
+                        <h3>Banking App Redesign</h3>
+                        <p>Simplified and secure mobile banking interface</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-small">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="branding" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-info">
+                        <h3>Brand Identity System</h3>
+                        <p>Complete branding package for tech startup</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-small">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-up">
+                    <h3>Get In Touch</h3>
+                    <p>Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+                    <p><a href="mailto:mohammedbilald95@gmail.com">mohammedbilald95@gmail.com</a></p>
+                    <div class="social-links-contact">
+                        <a href="https://www.linkedin.com/in/mohammed-bilal-d/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/md-bilal-d" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="mailto:mohammedbilald95@gmail.com" aria-label="Gmail" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/bilalx.exe/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025-26 Mohammed Bilal D. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-overlay" onclick="closeProjectModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <div class="modal-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="modal-description">
+                    <h3>Project Overview</h3>
+                    <p id="modal-description">Detailed project description goes here...</p>
+                    <h3>My Role</h3>
+                    <p id="modal-role">UI/UX Design, Frontend Development, Branding</p>
+                    <h3>Technologies Used</h3>
+                    <div id="modal-tech" class="project-tags"></div>
+                    <h3>Challenges & Solutions</h3>
+                    <p id="modal-challenges">How we overcame design and technical challenges...</p>
+                    <div class="modal-actions">
+                        <a href="#" class="btn btn-primary">View Live Site</a>
+                        <a href="#" class="btn btn-outline">Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
