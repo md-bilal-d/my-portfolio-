@@ -1,4 +1,42 @@
-// ===== Global Variables =====
+// ===== Typing Animation =====
+(function() {
+    const subtitleText = "Full Stack & AI Engineer | B.E. Computer Science";
+    let typingIndex = 0;
+    let isDeleting = false;
+    
+    function runTypewriter() {
+        const el = document.getElementById('typing-subtitle');
+        if (!el) return;
+
+        if (!isDeleting) {
+            el.textContent = subtitleText.substring(0, typingIndex + 1);
+            typingIndex++;
+            
+            if (typingIndex === subtitleText.length) {
+                isDeleting = true;
+                setTimeout(runTypewriter, 2000);
+                return;
+            }
+        } else {
+            el.textContent = subtitleText.substring(0, typingIndex - 1);
+            typingIndex--;
+            
+            if (typingIndex === 0) {
+                isDeleting = false;
+                setTimeout(runTypewriter, 500);
+                return;
+            }
+        }
+        
+        setTimeout(runTypewriter, isDeleting ? 40 : 80);
+    }
+    
+    if (document.readyState === 'loading') {
+        window.addEventListener('load', runTypewriter);
+    } else {
+        runTypewriter();
+    }
+})();
 
 // ===== Theme Toggle =====
 const themeToggle = document.getElementById('theme-toggle');
@@ -444,11 +482,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initTooltips();
     
     // Initialize language
-    const savedLanguage = localStorage.getItem('language') || 'en';
     if (languageSelector) {
         languageSelector.value = savedLanguage;
         changeLanguage(savedLanguage);
     }
+
+    // Start typing animation
 });
 
 // ===== Notification System =====
